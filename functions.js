@@ -22,10 +22,10 @@ let bot = function bot(fullname, email, pass) {
 
     await page.bringToFront()
 
-    // Establecer User Agent
-    // await page.setUserAgent(
-    //   "Mozilla/5.0 (X11 Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
-    // )
+    Establecer User Agent
+    await page.setUserAgent(
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+    )
 
     // Establece el tiempo de espera para todas las paginas en 10 segundos
     await page.setDefaultNavigationTimeout(10000)
