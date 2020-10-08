@@ -1,0 +1,23 @@
+{
+  "name": "twitter-bot_sck",
+  "version": "1.0.0",
+  "description": "Bot para Twitter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HOCKNAS/twitter-bot_sck.git"
+  },
+  "author": "HOCKNAS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HOCKNAS/twitter-bot_sck/issues"
+  },
+  "homepage": "https://github.com/HOCKNAS/twitter-bot_sck#readme",
+  "dependencies": {
+    "puppeteer": "^5.3.1"
+  }
+}
