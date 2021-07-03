@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/HOCKNAS/twitter-bot_sck#readme",
   "dependencies": {
-    "puppeteer": "^5.3.1"
+    "argv": "0.0.2",
+    "puppeteer": "^5.3.1",
+    "read-excel-file": "^5.2.4",
+    "yargs": "^17.0.1"
   }
 }
