@@ -1,5 +1,7 @@
-const puppeteer = require("puppeteer")
+const puppeteer = require("puppeteer-extra")
 const { registerStep1, registerStep2, registerStep3, registerPassword } = require("./helpers/functions")
+const StealthPlugin = require('puppeteer-extra-plugin-stealth')
+puppeteer.use(StealthPlugin())
 
 let bot = function bot(fullname, email, pass, birthDate) {
 
@@ -9,10 +11,11 @@ let bot = function bot(fullname, email, pass, birthDate) {
     const chromeOptions = {
       headless: false,
       defaultViewport: {
-        width: 1920,
-        height: 1080,
+        width: 1366,
+        height: 768,
       },
-      args: ["--incognito", "--start-maximized"],
+      args: ["--start-maximized"],
+      ignoreDefaultArgs: ["--enable-automation"]
     }
 
     // Se inicia el navegador aplicando las chromeOptions
@@ -26,7 +29,7 @@ let bot = function bot(fullname, email, pass, birthDate) {
 
     // Establecer User Agent
     await page.setUserAgent(
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36"
     )
 
     // open twitter

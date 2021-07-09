@@ -22,6 +22,7 @@ const argv = require('yargs').argv;
   stdin.setEncoding('utf8');
 
   stdin.on('data', function () {
+    count++
     const name = `${file[count][2]} ${file[count][3]} ${file[count][4]} ${file[count][5]}`
     const birthDate = file[count][6]
     const email = file[count][10]

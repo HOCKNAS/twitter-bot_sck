@@ -20,6 +20,8 @@
   "dependencies": {
     "argv": "0.0.2",
     "puppeteer": "^5.3.1",
+    "puppeteer-extra": "^3.1.18",
+    "puppeteer-extra-plugin-stealth": "^2.7.8",
     "read-excel-file": "^5.2.4",
     "yargs": "^17.0.1"
   }
